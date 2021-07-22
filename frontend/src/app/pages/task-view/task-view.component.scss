@@ -1,0 +1,72 @@
+@import 'src/main-styles';
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.task-manager-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 680px;
+
+  .sidebar {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: $white-space-padding;
+    border-radius: 8px;
+    @include border-radii(8px, 0px, 0px, 8px);
+
+  }
+
+  .task-list-container {
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    border-radius: 8px;
+    padding: $white-space-padding;
+    @include border-radii(0px, 8px, 8px, 0px);
+  }
+
+  .title {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .list-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    flex-grow: 1;
+
+    .list-menu-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      width: 100%;
+      color: #5f5f5f;
+      margin-bottom: 5px;
+      border-radius: 5px;
+
+      &:hover {
+        background: $light;
+      }
+
+      &.is-active {
+        background-color: #cff8ef;
+        color: $dark-green;
+      }
+    }
+  }
+}
+
