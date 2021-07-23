@@ -23,9 +23,7 @@
     display: flex;
     flex-direction: column;
     padding: $white-space-padding;
-    border-radius: 8px;
     @include border-radii(8px, 0px, 0px, 8px);
-
   }
 
   .task-list-container {

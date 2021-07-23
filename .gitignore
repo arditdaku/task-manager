@@ -3,3 +3,4 @@
 api/node_modules
 frontend/node_modules
 api/.env
+.code
